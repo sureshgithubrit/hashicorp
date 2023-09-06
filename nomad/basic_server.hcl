@@ -12,7 +12,7 @@ data_dir = "/etc/nomad.d/data"
 bind_addr = "0.0.0.0"
 
 advertise {
-  # Defaults to the first private IP address.
+  # Defaults to the first private IP address of your machine.
   http = "10.0.102.173" # must be reachable by Nomad CLI clients
   rpc  = "10.0.102.173" # must be reachable by Nomad client nodes
   serf = "10.0.102.173" # must be reachable by Nomad server nodes
